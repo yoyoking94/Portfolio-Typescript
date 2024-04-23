@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root,
+.app {
+  /* cursor: none; */
+  font-family: "Fira Code", monospace;
+  background-color: #0b1215;
+  color: white;
+}
+
+/* Custom scrollbar */
+html::-webkit-scrollbar {
+  width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #0b1215;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+/* Custom Cursor */
+.cursorDot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.cursorOutline {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+}
+
+.cursorDot,
+.cursorOutline {
+  mix-blend-mode: difference;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 2;
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s ease-in-out;
+}

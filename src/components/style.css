@@ -1,0 +1,61 @@
+/* Responsive */
+/* Small devices such as small phones (368px and down) */
+@media only screen and (max-width: 23em) {
+}
+
+/* Small devices such as large phones (640px and down) */
+@media only screen and (max-width: 40em) {
+}
+
+/* Medium devices such as tablets (768px and down) */
+@media only screen and (max-width: 48em) {
+}
+
+/* custom (912px and down) */
+@media only screen and (max-width: 57em) {
+  nav > ul {
+    display: none;
+  }
+
+  nav > div > span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 50px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+  }
+  nav > div > span:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  nav > div.active {
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+  }
+
+  nav > div.active > span:nth-child(2) {
+    width: 0;
+  }
+
+  nav > div.active > span:nth-child(1),
+  nav > div.active > span:nth-child(3) {
+    transition-delay: 0.5s;
+  }
+
+  nav > div.active > span:nth-child(1) {
+    transform: translateY(9px);
+  }
+
+  nav > div.active > span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+  }
+}
+
+/* Large devices such as laptops (1024px and down) */
+@media only screen and (max-width: 64em) {
+}
+
+/* Largest devices such as desktops (1280px and down) */
+@media only screen and (max-width: 80em) {
+}
